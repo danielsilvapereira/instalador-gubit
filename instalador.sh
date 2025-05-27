@@ -54,6 +54,6 @@ git clone "$repo"
 cd "$dir" || { echo "Erro ao entrar no diretório $dir"; exit 1; }
 
 echo "Executando docker-compose up -d ..."
-docker-compose up -d
+docker compose up -d
 
 echo "Instalação concluída!"
