@@ -5,7 +5,7 @@ echo "Adicionando repositório Docker..."
 dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 
 echo "Instalando Docker..."
-dnf install --nobest docker-ce -y
+dnf install --nobest docker-ce nano git -y
 
 echo "Habilitando e iniciando o Docker..."
 systemctl enable --now docker
